@@ -1,0 +1,7 @@
+flask
+Flask-Script
+flask-sqlalchemy
+psycopg2
+deepdiff
+Flask-JWT
+ansible-runner

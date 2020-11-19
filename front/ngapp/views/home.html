@@ -1,0 +1,124 @@
+<!--div data-ng-controller="HomeCtrl">
+	<div class="pd-ltr-20">
+		<div class="card-box pd-20 height-100-p mb-30">
+			<div class="row align-items-center">
+				<div class="col-md-4">
+					<img src="static/vendors/images/banner-img.png" alt="">
+				</div>
+				<div class="col-md-8">
+					<h4 class="font-20 weight-500 mb-10 text-capitalize">
+						Привет! <div class="weight-600 font-30 text-blue"> Сис. Админ!</div>
+					</h4>
+					<p class="font-18 max-width-600">Надеюсь этот инструмент поможет тебе в твоем деле.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div-->
+<div class="row">
+	<!-- Bootstrap Switchery Start -->
+	<div class="col-md-6 col-sm-12 mb-30">
+		<div class="pd-20 card-box height-100-p">
+			<div class="clearfix mb-30">
+				<div class="pull-left">
+					<h4 class="text-blue h4">Хосты</h4>
+				</div>
+				<div class="pull-right h4">
+					<button ng-click="instance_create()" style="background-color:rgb(37, 99, 99); color: #ffffff;" type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-plus-circle"></i> 
+						Добавить хост
+					</button>
+				</div>
+			</div>
+			<form>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Хост</th>
+							<th scope="col">Ip</th>
+							<th scope="col">FQDN</th>
+							<th scope="col">user</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="instance in instances.instances">
+							<th scope="row">{{$index + 1}}</th>
+							<td>{{ instance.name }}</td>
+							<td>{{ instance.ip }}</td>
+							<td>{{ instance.fqdn }}</td>
+							<td><span class="badge badge-primary">{{ instance.user }}</span></td>
+						</tr>
+					</tbody>
+				</table>
+		</form>
+		</div>
+	</div>
+	<!-- Bootstrap Switchery End -->
+	<!-- Bootstrap Tags Input Start -->
+	<div class="col-md-6 col-sm-12 mb-30">
+		<div class="pd-20 card-box height-100-p">
+			<div class="clearfix mb-30">
+				<div class="pull-left">
+					<h4 class="text-blue h4">Сервисы</h4>
+				</div>
+				<div class="pull-right h4">
+					<button style="background-color: #3b5998; color: #ffffff;" type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-plus-circle"></i> 
+						Добавить сервис
+					</button>
+				</div>
+			</div>
+			<form>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+							<th scope="col">Tag</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td><span class="badge badge-primary">Primary</span></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+							<td><span class="badge badge-secondary">Secondary</span></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+							<td><span class="badge badge-success">Success</span></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+							<td><span class="badge badge-success">Success</span></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+							<td><span class="badge badge-success">Success</span></td>
+						</tr>
+
+					</tbody>
+				</table>
+		</form>
+		</div>
+	</div>
+	<!-- Bootstrap Tags Input End -->
+</div>

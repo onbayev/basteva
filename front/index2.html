@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="noSticksApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Digital Infra - Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-sanitize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-resource.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-mocks.js"></script>
+
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body id="page-top" ng-app="noSticksApp">
+  <div id="wrapper">
+    <div id="content-wrapper" class="d-flex flex-column">
+      
+      <div id="content"  ng-view></div>
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>NoSticks 2020 </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script-->
+  <script src="https://cdn.jsdelivr.net/npm/ui-bootstrap4@3.0.5/dist/ui-bootstrap-tpls-3.0.5.min.js"></script>
+  <script src="ngapp/script.js"></script>
+  <script src="ngapp/services.js"></script>
+  <script src="ngapp/controllers/LoginCtrl.js"></script>
+  <script src="ngapp/controllers/HomeCtrl.js"></script>
+  <script src="ngapp/controllers/ModalCompanyCtrl.js"></script>
+</body>
+</html>
